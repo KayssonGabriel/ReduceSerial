@@ -1,0 +1,23 @@
+# ninja log v6
+165	203	7522994834979798	CMakeFiles/ReduceSerial.dir/main.cpp.obj.modmap	af31836ad347c099
+3	161	7522994833361764	CMakeFiles/ReduceSerial.dir/main.cpp.obj.ddi	7c050d18d22e4fff
+165	203	7522994834979798	CMakeFiles/ReduceSerial.dir/CXX.dd	af31836ad347c099
+165	203	7522994834979798	C:/Users/kayss/OneDrive/Documentos/6 periodo/Programação Paralela/src/ReduceSerial/cmake-build-debug/CMakeFiles/ReduceSerial.dir/CXXModules.json	af31836ad347c099
+206	1586	7522994835392504	CMakeFiles/ReduceSerial.dir/main.cpp.obj	6743204d9d9e2a78
+1586	1794	7522994849194052	ReduceSerial.exe	894317329c3355b5
+20	382	7527710692837518	build.ninja	a6fe83bf7c76b7c
+49	160	7527710694790384	CMakeFiles/ReduceSerial.dir/CXX.dd	af31836ad347c099
+49	160	7527710694790384	C:/Users/kayss/OneDrive/Documentos/6 periodo/Programação Paralela/src/ReduceSerial/cmake-build-debug/CMakeFiles/ReduceSerial.dir/CXXModules.json	af31836ad347c099
+49	160	7527710694790384	CMakeFiles/ReduceSerial.dir/main.cpp.obj.modmap	af31836ad347c099
+3	2097	7527711018664663	CMakeFiles/ReduceSerial.dir/main.cpp.obj.ddi	7c050d18d22e4fff
+2104	2151	7527711039674309	CMakeFiles/ReduceSerial.dir/CXX.dd	af31836ad347c099
+2104	2151	7527711039674309	C:/Users/kayss/OneDrive/Documentos/6 periodo/Programação Paralela/src/ReduceSerial/cmake-build-debug/CMakeFiles/ReduceSerial.dir/CXXModules.json	af31836ad347c099
+2104	2151	7527711039674309	CMakeFiles/ReduceSerial.dir/main.cpp.obj.modmap	af31836ad347c099
+2155	4631	7527711040184664	CMakeFiles/ReduceSerial.dir/main.cpp.obj	6743204d9d9e2a78
+4631	5964	7527711064947208	ReduceSerial.exe	894317329c3355b5
+2	229	7527711655945639	CMakeFiles/ReduceSerial.dir/main.cpp.obj.ddi	7c050d18d22e4fff
+235	276	7527711658278724	CMakeFiles/ReduceSerial.dir/CXX.dd	af31836ad347c099
+235	276	7527711658278724	C:/Users/kayss/OneDrive/Documentos/6 periodo/Programação Paralela/src/ReduceSerial/cmake-build-debug/CMakeFiles/ReduceSerial.dir/CXXModules.json	af31836ad347c099
+235	276	7527711658278724	CMakeFiles/ReduceSerial.dir/main.cpp.obj.modmap	af31836ad347c099
+279	1895	7527711658704768	CMakeFiles/ReduceSerial.dir/main.cpp.obj	6743204d9d9e2a78
+1895	2115	7527711674875893	ReduceSerial.exe	894317329c3355b5

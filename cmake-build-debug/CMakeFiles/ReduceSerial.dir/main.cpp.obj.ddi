@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\ReduceSerial.dir\\main.cpp.obj",
+            "outputs": [
+                "C:\\Users\\kayss\\OneDrive\\Documentos\\6 periodo\\Programação Paralela\\src\\ReduceSerial\\cmake-build-debug\\vc140.pdb",
+                "CMakeFiles\\ReduceSerial.dir\\main.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}
