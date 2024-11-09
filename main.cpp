@@ -1,42 +1,40 @@
 #include <iostream>
 #include <vector>
 #include <chrono>
-#include <iomanip> // Para std::setprecision
+#include <iomanip>
 
-// Função para reduzir o array de forma serial
-int reduceSerial(const std::vector<int>& array) {
-    int sum = 0;
-    for (int value : array) {
-        sum += value;
+int reduce_serial(const std::vector<int>& array, int& trabalho, int& passos) {
+    int soma = 0;
+    for (int valor : array) {
+        soma += valor;
+        trabalho++;  // Incrementa o trabalho a cada adição
     }
-    return sum;
+    passos = array.size();  // Cada elemento conta como um passo
+    return soma;
+}
+
+void medir_tempo(int tamanho) {
+    std::vector<int> array(tamanho, 1);
+    int trabalho = 0, passos = 0;
+
+    auto inicio = std::chrono::high_resolution_clock::now();
+    int resultado = reduce_serial(array, trabalho, passos);
+    auto fim = std::chrono::high_resolution_clock::now();
+
+    std::chrono::duration<double> duracao = fim - inicio;
+
+    std::cout << std::fixed << std::setprecision(6);
+    std::cout << "Tamanho do array: " << tamanho
+              << " | Soma: " << resultado
+              << " | Tempo: " << duracao.count() << " segundos"
+              << " | Trabalho: " << trabalho
+              << " | Passos: " << passos << std::endl;
 }
 
 int main() {
-    // Array com os tamanhos pedidos
-    std::vector<int> sizes = {100, 1000, 10000, 100000, 1000000, 10000000};
-
-    for (int size : sizes) {
-        std::vector<int> array(size, 1); // Preenche o array com 1 para simplificar a soma
-        auto start = std::chrono::high_resolution_clock::now();
-
-        // Realiza a redução serial
-        int result = reduceSerial(array);
-
-        auto end = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> duration = end - start;
-
-        // Calcula o trabalho e passos
-        int work = size; // Trabalho total é o número de somas necessárias
-        int steps = size; // Passos
-
-        // Exibe os resultados
-        std::cout << "Metodo Serial:\n";
-        std::cout << "Tamanho do vetor: " << size << "\n";
-        std::cout << "Resultado: " << result << "\n";
-        std::cout << "Tempo: " << std::fixed << std::setprecision(7) << duration.count() << " segundos\n";
-        std::cout << "Trabalho: " << work << "\n";
-        std::cout << "Passos: " << steps << "\n\n";
+    int tamanhos[] = {100, 1000, 10000, 100000, 1000000, 10000000};
+    for (int tamanho : tamanhos) {
+        medir_tempo(tamanho);
     }
     return 0;
 }
